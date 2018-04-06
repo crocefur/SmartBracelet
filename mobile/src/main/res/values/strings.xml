@@ -1,7 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <item name="visible" type="id" />
     <item name="masked" type="id" />
-    <string name="app_name">URSA</string>
+    <string name="app_name">app name </string>
     <string name="title_home">WELCOME ADMIN</string>
     <string name="title_logout">Sign out</string>
     <string name="title_login">LOGIN</string>
