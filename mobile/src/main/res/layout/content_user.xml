@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.softdev.smarttechx.smartbracelet.UserActivity"
+    tools:showIn="@layout/activity_user">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/butBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:drawableLeft="@drawable/ic_navigate_before_black_24dp"
+                        android:text="GO BACK"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/roundcornerbs"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="Firstname Lastname"
+                            android:textAlignment="center"
+                            android:textColor="@color/com_facebook_button_background_color_focused"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textMac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="2dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/com_facebook_button_background_color_focused"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Name: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textLastname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Surname: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Email: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textLogin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Login with:"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textLaststep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Last update step:"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textLastbike"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Last update bike:"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textTotalstep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Total step:"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                app:cardBackgroundColor="@color/backmain">
+
+                                <TextView
+                                    android:id="@+id/textTotalbike"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Total bike:"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/account"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="2dp"
+                                    app:cardBackgroundColor="@color/backmain">
+
+                                    <Button
+                                        android:id="@+id/butChgpwd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@android:color/darker_gray"
+                                        android:text="Change password"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="18sp"
+                                        tools:textAllCaps="false" />
+
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="2dp"
+                                    app:cardBackgroundColor="@color/backmain">
+
+                                    <Button
+                                        android:id="@+id/butUnbind"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_margin="1dp"
+                                        android:background="@android:color/darker_gray"
+                                        android:text="Unbind band"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="18sp"
+                                        tools:textAllCaps="false" />
+
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="2dp"
+                                    app:cardBackgroundColor="@color/backmain">
+
+                                    <Button
+                                        android:id="@+id/butDelete"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_margin="1dp"
+                                        android:background="@android:color/darker_gray"
+                                        android:text="Delete account"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="18sp"
+                                        tools:textAllCaps="false" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textLastlogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="Last Connection: "
+                            android:textAlignment="center"
+                            android:textColor="@color/com_facebook_button_background_color_focused"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.softdev.smarttechx.smartbracelet">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.softdev.smarttechx.smartbracelet.util.App"
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.ApplicationId"
+            android:value="@string/default_web_client_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConnectActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_activity_connect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_user"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <!-- android:theme="@android:style/Theme.Holo.Dialog" -->
+
+        <service
+            android:name=".service.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".BikeActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_activity_welcome"
+            android:parentActivityName=".ConnectActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.ConnectActivity" />
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info"
+            android:parentActivityName=".ConnectActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.ConnectActivity" />
+        </activity>
+        <activity
+            android:name=".BindActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_bind"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.LoginActivity" />
+        </activity>
+
+        <receiver
+            android:name=".service.NotificationService"
+            android:process=":remote" />
+
+        <service
+            android:name=".service.TaskkillService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".ResetpasswordActivity"
+            android:label="@string/title_activity_resetpassword"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".DeviceScanActivity"
+            android:label="@string/title_activity_device_scan"
+            android:logo="@android:color/transparent"
+            android:parentActivityName=".BindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.softdev.smarttechx.smartbracelet.BindActivity" />
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting"></activity>
+    </application>
+
+</manifest>

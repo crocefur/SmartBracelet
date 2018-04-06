@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.softdev.smarttechx.smartbracelet.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/cardview_light_background"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:padding="8dp"
+            android:text="@string/find_band"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/cardview_light_background"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:padding="8dp"
+            android:text="@string/clear_data"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorWhite"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:padding="8dp"
+            android:text="@string/reset_bracelet"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butShutdown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorWhite"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:padding="8dp"
+            android:text="@string/shutdown_band"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butUnbind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorWhite"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:padding="8dp"
+            android:text="@string/unbind_device"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butExit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorWhite"
+            android:drawableEnd="@drawable/ic_exit_24dp"
+            android:padding="8dp"
+            android:text="@string/exit"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+[
+  {
+    "outputType": {
+      "type": "APK"
+    },
+    "apkInfo": {
+      "type": "MAIN",
+      "splits": [],
+      "versionCode": 11
+    },
+    "path": "mobile-release.apk",
+    "properties": {
+      "packageId": "com.softdev.smarttechx.smartbracelet",
+      "split": "",
+      "minSdkVersion": "18"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252528</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#8effffff</color>
+    <color name="label">#c5c2c3</color>
+    <color name="navbackground">#252528</color>
+    <color name="navItem">#ffffff</color>
+    <color name="editColor">#a1ffffff</color>
+    <color name="editColorBack">#a6ffffff</color>
+    <color name="backmain">#cecccc</color>
+    <color name="backtext">#252528</color>
+    <color name="searchwhite">#ffffff</color>
+    <color name="total">#d2faf7</color>
+    <color name="exitred">#cc0000</color>
+    <color name="stepbikecolor">#ef0000ff</color>
+    <color name="resetBack">#d4d3d3</color>
+    <color name="connectstatus">#00d72f</color>
+    <color name="transparent">#00d72f</color>
+    <color name="trans">#00ffffff</color>
+
+    <color name="link">#0000d7</color>
+</resources>
