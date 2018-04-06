@@ -7,15 +7,12 @@
     <string name="title_login">LOGIN</string>
     <string name="title_activity_main">MainActivity</string>
     <!--   debug key-->
-    <string name="default_web_client_id">1063218799631-q8nv1mh8ameqhbdub7ghsqfjn9nfio55.apps.googleusercontent.com</string>
-    <string name="default_andriod_client_id">1063218799631&#8211;1us939f98pm6rpho3tkge5v8e090dk8b.apps.googleusercontent.com</string>
-    <string name="facebook_app_id">1775230789444006</string>
-    <string name="fb_login_protocol_scheme">fb1775230789444006</string>
+    <string name="default_web_client_id">google web_client_id</string>
+    <string name="default_andriod_client_id">google andriod_client_id</string>
+    <string name="facebook_app_id">facebook_app_id</string>
+    <string name="fb_login_protocol_scheme">fb_login_protocol_scheme</string>
     <!--Production key-->
-    <!-- <string name="default_andriod_client_id">849972602412-bhhccc5lmdtfepnq3t25roh0up5hmnni.apps.googleusercontent.com</string>
-     <string name="default_web_client_id">849972602412-59q3slsllfasgf078v1aodohv78uugtk.apps.googleusercontent.com</string>
-     <string name="facebook_app_id">2048327382110702</string>
-     <string name="fb_login_protocol_scheme">fb2048327382110702</string>-->
+ 
     <string name="title_activity_register">REGISTER</string>
     <string name="action_on_bluetooth">Make discovery</string>
 
